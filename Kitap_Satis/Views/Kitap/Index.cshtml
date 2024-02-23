@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div>
+    <h2 style="margin-bottom: 30px;">Top 100 Books</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="~/img/haci-murat.jpg" class="card-img-top" alt="Hacı Murat">
+                    <div class="card-body">
+                        <h5 class="card-title">Hacı Murat</h5>
+                        <p class="accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Daha Fazlası...
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>Hacı Murat Özet: </strong> <div>Savaşan taraflar kadar, egemenler ve uyrukları arasındaki ilişkilerin sergilenişi, kişilerin ve coğrafyanın kusursuz tasviri bu esere güçlü bir gerçeklik duygusu kazandırmaktadır.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">@ViewBag.kitap.KitapId</li>
+                        <li class="list-group-item">@ViewBag.kitap.KitapAdi</li>
+                        <li class="list-group-item">@ViewBag.kitap.SayfaSayisi</li>
+                        <li class="list-group-item">@ViewBag.kitap.YazarAdi</li>
+                        <li class="list-group-item">@ViewBag.kitap.KitapTuru</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://www.bkmkitap.com/haci-murat-142768?waw_keyword=Hac%C4%B1%20murat" class="card-link" style="color:green">Satın Al</a>
+                        <a href="https://www.youtube.com/watch?v=fzmXCWV79Nw&pp=ygUYaGFjxLEgbXVyYXQga2l0YXAgeW9ydW11" class="card-link">Kitabı Sesli Dinle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
